@@ -1,0 +1,180 @@
+.login-page {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 32px 16px;
+    box-sizing: border-box;
+    background: linear-gradient(135deg, #f0f4ff 0%, #e6edfa 50%, #dbe4f6 100%);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+}
+
+.login {
+    width: 100%;
+    max-width: 420px;
+    background: #ffffff;
+    border-radius: 16px;
+    padding: 36px 32px;
+    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.08),
+                0 8px 10px -6px rgba(0, 0, 0, 0.04),
+                0 0 0 1px rgba(0, 0, 0, 0.04);
+    box-sizing: border-box;
+    position: relative;
+}
+
+.form-login {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.form-login::before {
+    content: "Welcome Back";
+    display: block;
+    font-size: 24px;
+    font-weight: 700;
+    color: #111827;
+    margin-bottom: 20px;
+    text-align: center;
+    letter-spacing: -0.3px;
+}
+
+.form-login .email-p,
+.form-login .password-p {
+    margin: 14px 0 6px 0;
+    font-size: 14px;
+    font-weight: 600;
+    color: #374151;
+    letter-spacing: 0.2px;
+}
+
+.form-login input[type="email"],
+.form-login input[type="password"],
+.form-login #input-email,
+.form-login #input-password {
+    width: 100%;
+    padding: 12px 14px;
+    border: 1.5px solid #d1d5db;
+    border-radius: 8px;
+    font-size: 15px;
+    color: #111827;
+    background-color: #f9fafb;
+    box-sizing: border-box;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
+}
+
+.form-login input[type="email"]::placeholder,
+.form-login input[type="password"]::placeholder {
+    color: #9ca3af;
+}
+
+.form-login input:focus {
+    outline: none;
+    background-color: #ffffff;
+    border-color: #4f46e5;
+    box-shadow: 0 0 0 4px rgba(79, 70, 229, 0.12);
+}
+
+.form-login p[style*="red"],
+.form-login .error-message {
+    background-color: #fef2f2;
+    border: 1px solid #fecaca;
+    color: #dc2626 !important;
+    padding: 10px 14px;
+    border-radius: 8px;
+    font-size: 14px;
+    margin: 0 0 16px 0;
+    text-align: center;
+    font-weight: 500;
+}
+
+.form-login button[type="submit"] {
+    width: 100%;
+    margin-top: 24px;
+    padding: 13px 18px;
+    background: linear-gradient(135deg, #4f46e5 0%, #4338ca 100%);
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 0.3px;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(79, 70, 229, 0.25);
+    transition: all 0.2s ease;
+}
+
+.form-login button[type="submit"]:hover:not(:disabled) {
+    background: linear-gradient(135deg, #4338ca 0%, #3730a3 100%);
+    box-shadow: 0 6px 16px rgba(79, 70, 229, 0.35);
+    transform: translateY(-1px);
+}
+
+.form-login button[type="submit"]:active:not(:disabled) {
+    transform: translateY(0);
+}
+
+.form-login button[type="submit"]:disabled {
+    opacity: 0.65;
+    cursor: not-allowed;
+    box-shadow: none;
+}
+
+.loading-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(15, 23, 42, 0.5);
+    backdrop-filter: blur(6px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+    color: #ffffff;
+    animation: authFadeIn 0.2s ease-out forwards;
+}
+
+.loading-screen::before {
+    content: "";
+    width: 44px;
+    height: 44px;
+    margin-bottom: 16px;
+    border: 4px solid rgba(255, 255, 255, 0.25);
+    border-top: 4px solid #ffffff;
+    border-radius: 50%;
+    animation: authSpin 0.8s linear infinite;
+}
+
+.loading-screen h1 {
+    font-size: 20px;
+    font-weight: 600;
+    margin: 0 0 6px 0;
+    color: #ffffff;
+    letter-spacing: 0.3px;
+}
+
+.loading-screen h2 {
+    font-size: 14px;
+    font-weight: 400;
+    margin: 0;
+    color: #e2e8f0;
+}
+
+@keyframes authSpin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+@keyframes authFadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@media (max-width: 480px) {
+    .login {
+        padding: 28px 20px;
+    }
+}

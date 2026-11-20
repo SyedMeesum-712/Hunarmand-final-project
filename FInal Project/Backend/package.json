@@ -1,0 +1,16 @@
+{
+  "name": "final-project-back-end",
+  "version": "1.0.0",
+  "description": "It is the backend for LearnHub , my final project of Hunarmand Punjab React and Node js Full stack course - Batch 3",
+  "author": "Syed Meesum Abbas",
+  "type": "module",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon server.js"
+  },
+  "dependencies": {
+    "mongoose": "^9.12.2",
+    "nodemon": "^3.1.14"
+  }
+}

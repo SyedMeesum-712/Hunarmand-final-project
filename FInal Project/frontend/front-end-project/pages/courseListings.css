@@ -1,0 +1,131 @@
+.courses-listing {
+    max-width: 950px;
+    margin: 30px auto;
+    padding: 25px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+}
+
+.course-listing-header h1 {
+    margin-top: 0;
+    color: #333333;
+}
+
+.course-listing-header p {
+    color: #666666;
+    margin-bottom: 20px;
+}
+
+.toggle-form-btn {
+    margin-bottom: 15px;
+    background-color: #4f46e5;
+    color: #ffffff;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.toggle-form-btn:hover {
+    background-color: #3730a3;
+}
+
+.reserved-notice {
+    background-color: #f9fafb;
+    border: 1px dashed #d1d5db;
+    border-radius: 6px;
+    padding: 12px 16px;
+    margin-bottom: 20px;
+}
+
+.reserved-notice p {
+    margin: 0;
+    color: #6b7280;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.add-course-form {
+    margin-bottom: 20px;
+    padding: 16px;
+    background-color: #f9fafb;
+    border: 1px solid #e5e7eb;
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.add-course-form h3 {
+    margin: 0 0 5px 0;
+    color: #333333;
+}
+
+.add-course-form input {
+    padding: 8px 12px;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.add-course-form button {
+    align-self: flex-start;
+    background-color: #10b981;
+    color: #ffffff;
+    border: none;
+    padding: 8px 18px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.add-course-form button:hover {
+    background-color: #059669;
+}
+
+.courses-listing table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+.courses-listing th,
+.courses-listing td {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 10px 12px;
+}
+
+.courses-listing th {
+    background-color: #f4f6f8;
+    color: #333333;
+}
+
+.courses-listing tr:hover {
+    background-color: #f9f9f9;
+}
+
+.courses-listing table button {
+    background-color: #4f46e5;
+    color: #ffffff;
+    border: none;
+    padding: 6px 14px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.courses-listing table button:hover {
+    background-color: #3730a3;
+}
+
+.courses-listing table .unenroll-btn {
+    background-color: #ef4444;
+}
+
+.courses-listing table .unenroll-btn:hover {
+    background-color: #dc2626;
+}
